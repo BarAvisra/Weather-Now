@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      defer
+      src="https://kit.fontawesome.com/d2bc648ccc.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>WeatherNow</title>
+  </head>
+
+  <body>
+    <!-- <input id="input1" type="text" placeholder="Enter a country/city">
+    <button id="btn1">Check Temperature!</button>
+    <p id="result"></p> -->
+
+    <section class="upper_container">
+      <div class="upper-upper">
+        <button class="upper-right-setting-icon">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+      <div class="middle-upper">
+        <h2 class="city_country">enter your location</h2>
+        <p class="temp"></p>
+      </div>
+      <div class="bottom-upper">
+        <img
+          class="weather_icon"
+          src="./icons/weather-icons/day-clear.svg"
+          ;
+          alt="#"
+        />
+        <p class="weather_description"></p>
+        <p class="feels_like"></p>
+      </div>
+    </section>
+
+    <section class="lower_container">
+      <div class="indicators">
+        <div class="indi wind">
+          <div class="indiicon windicon" id="wind_indicator">-</div>
+          <div class="inditext windtext">wind</div>
+        </div>
+        <div class="indi humidity">
+          <div class="indiicon humidityicon" id="humidity_indicator">-</div>
+          <div class="inditext humiditytext">humidity</div>
+        </div>
+        <div class="indi maxtemp">
+          <div class="indiicon maxtempicon" id="max_temp_indicator">-</div>
+          <div class="inditext maxtemptext">max temp</div>
+        </div>
+      </div>
+      <div class="input-container">
+        <input
+          id="userInput"
+          type="search"
+          placeholder="search for a sunny location"
+        />
+        <div id="searchIcon"></div>
+      </div>
+    </section>
+  </body>
+</html>

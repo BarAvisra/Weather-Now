@@ -1,0 +1,158 @@
+* {
+  font-family: "Futura", "Trebuchet MS", sans-serif, Arial;
+}
+
+body {
+  background-color: #e3e2ff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+section.upper_container {
+  color: #3733b4;
+  padding: 80px 40px 80px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+
+  .upper-upper {
+    display: flex;
+    justify-content: flex-end;
+
+    i.fa-solid.fa-bars {
+      font-size: 20px;
+      cursor: pointer;
+    }
+  }
+
+  .middle-upper {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+
+    h2.city_country {
+      font-size: 25px;
+      color: #8887ba;
+      font-weight: normal;
+    }
+
+    p.temp {
+      font-size: 65px;
+      font-weight: bold;
+    }
+  }
+
+  .bottom-upper {
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+
+    img.weather_icon {
+      width: 172px;
+    }
+
+    .weather_description {
+      margin-top: 1rem;
+      font-size: 20px;
+    }
+  }
+}
+
+section.lower_container {
+  background-color: #3733b4;
+  border-radius: 60px 60px 0 0;
+  padding: 0px 40px 40px 40px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 550px;
+
+  .indicators {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    align-items: center;
+
+    .indiicon {
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+      color: #3733b4;
+      font-size: 12px;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .indi {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      color: #e3e2ff;
+    }
+
+    .windicon {
+      background-color: #fc614f;
+    }
+
+    .humidityicon {
+      background-color: rgb(50, 242, 92);
+    }
+
+    .maxtempicon {
+      background-color: rgb(255, 190, 70);
+    }
+  }
+
+  .input-container {
+    display: flex;
+    justify-content: center;
+
+    #searchIcon {
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      top: 77%;
+      left: 60px;
+      transform: translateY(-50%);
+      background-image: url(./icons/magnifying-glass-solid.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      cursor: pointer;
+    }
+
+    input[type="search"] {
+      padding: 20px 10px 20px 45px;
+      width: 100%;
+      border-radius: 35px;
+      background-color: #e3e2ff;
+      border: none;
+      color: #3733b4;
+      font-weight: normal;
+
+      &::placeholder {
+        font-weight: normal;
+        color: #8887ba;
+
+        &::focus {
+          outline: none;
+        }
+      }
+    }
+  }
+
+  section.bottom-upper.weather_description {
+    text-align: center;
+  }
+}
