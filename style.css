@@ -7,6 +7,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
 
 section.upper_container {
@@ -62,14 +63,12 @@ section.upper_container .bottom-upper .feels_like {
 section.lower_container {
   background-color: #3733b4;
   border-radius: 60px 60px 0 0;
-  padding: 0px 40px 40px 40px;
+  padding: 40px;
+  /* Convert to flex to allow better positioning of child elements */
   display: flex;
   flex-direction: column;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  top: 550px;
+  /* Add a little space at the top */
+  margin-top: 20px;
 }
 section.lower_container .indicators {
   display: flex;
