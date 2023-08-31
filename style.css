@@ -46,13 +46,12 @@ section.upper_container .bottom-upper {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  margin-top: -30px;
 }
 section.upper_container .bottom-upper img.weather_icon {
   width: 172px;
 }
 section.upper_container .bottom-upper .weather_description {
-  margin-top: 1rem;
+  margin-top: -1rem;
   font-size: 20px;
 }
 section.upper_container .bottom-upper .feels_like {
