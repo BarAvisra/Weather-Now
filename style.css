@@ -1,5 +1,6 @@
 * {
   font-family: "Futura", "Trebuchet MS", sans-serif, Arial;
+  box-sizing: border-box;
 }
 
 body {
@@ -116,14 +117,14 @@ section.lower_container .input-container #searchIcon {
   position: absolute;
   width: 14px;
   height: 14px;
-  top: 50%; /* center it vertically */
-  left: 15px; /* adjust this value based on how much space you want from the left */
-  transform: translateY(-50%); /* this ensures it's truly centered vertically */
+  top: calc(50% - 7px); /* Subtract half the height of the icon to center it */
+  left: 15px; /* You can adjust this to move the icon left or right */
   background-image: url(./icons/magnifying-glass-solid.svg);
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;
 }
+
 
 section.lower_container .input-container input[type=search] {
   padding: 20px 10px 20px 45px;
