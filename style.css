@@ -105,21 +105,26 @@ section.lower_container .indicators .maxtempicon {
   background-color: rgb(255, 190, 70);
 }
 section.lower_container .input-container {
+  position: relative; /* This is crucial for the absolute positioning of the search icon */
   display: flex;
   justify-content: center;
+  width: 100%; /* Ensure it takes the full width */
+  margin-top: 20px; /* Add some spacing at the top, adjust as needed */
 }
+
 section.lower_container .input-container #searchIcon {
   position: absolute;
   width: 14px;
   height: 14px;
-  top: 77%;
-  left: 60px;
-  transform: translateY(-50%);
+  top: 50%; /* center it vertically */
+  left: 15px; /* adjust this value based on how much space you want from the left */
+  transform: translateY(-50%); /* this ensures it's truly centered vertically */
   background-image: url(./icons/magnifying-glass-solid.svg);
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;
 }
+
 section.lower_container .input-container input[type=search] {
   padding: 20px 10px 20px 45px;
   width: 100%;
